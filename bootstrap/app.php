@@ -95,7 +95,7 @@ $app->register(App\Providers\AppServiceProvider::class);
 
 $app->router->group([
     'namespace' => 'App\Http\Controllers',
-], function ($router) {
+], function ($app) {
     require __DIR__.'/../routes/web.php';
 });
 
